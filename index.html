@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE NEST - Développement Web, Apps Mobiles & Formations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Nest shape -->
+                        <path d="M15 35 Q30 20 45 35 Q30 50 15 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path d="M20 35 Q30 25 40 35 Q30 45 20 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <path d="M25 35 Q30 30 35 35 Q30 40 25 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                        <!-- Code tags -->
+                        <text x="30" y="38" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
+                    </svg>
+                    <span class="logo-text">CODE NEST</span>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                        <li><a href="#realisations" class="nav-link">Réalisations</a></li>
+                        <li><a href="#formations" class="nav-link">Formations</a></li>
+                        <li><a href="#about" class="nav-link">À Propos</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="btn-primary">Demander un devis</button>
+                
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>Agile</span>
+                        <span class="separator">•</span>
+                        <span>Sur-mesure</span>
+                        <span class="separator">•</span>
+                        <span>Fiable</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Nous concevons vos sites, applications et logiciels — clés en main.
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Développement web, apps mobiles et formations pour accélérer votre transition digitale.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <button class="btn-primary btn-large">Voir nos services</button>
+                        <button class="btn-secondary btn-large">Nos réalisations</button>
+                    </div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            <span>Livraison rapide</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
+                            </svg>
+                            <span>Maintenance incluse</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <span>Formations certifiantes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <!-- Image d'annonce principale -->
+                    <div class="hero-announcement">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="CODE NEST - Développement Web et Mobile" class="announcement-image">
+                        <div class="announcement-overlay">
+                            <div class="announcement-badge">NOUVEAU</div>
+                            <h3>Solutions Digitales Complètes</h3>
+                            <p>Web • Mobile • Formation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-background">
+                        <svg class="circuit-pattern" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="circuit" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                    <path d="M0 20h40M20 0v40" stroke="#2EA6FF" stroke-width="0.5" opacity="0.1"/>
+                                    <circle cx="20" cy="20" r="1" fill="#2EA6FF" opacity="0.2"/>
+                                </pattern>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#circuit)"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="device-mockups">
+                        <div class="desktop-mockup">
+                            <div class="screen">
+                                <div class="screen-header">
+                                    <div class="screen-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="screen-content">
+                                    <div class="dashboard-preview">
+                                        <div class="dashboard-header">
+                                            <div class="dashboard-logo">CN</div>
+                                            <div class="dashboard-nav">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-stats">
+                                            <div class="stat-card"></div>
+                                            <div class="stat-card"></div>
+                                            <div class="stat-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mobile-mockup">
+                            <div class="phone-screen">
+                                <div class="app-header">
+                                    <div class="app-logo">CN</div>
+                                    <div class="app-title">Mobile App</div>
+                                </div>
+                                <div class="app-content">
+                                    <div class="user-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4"/>
+                                        </svg>
+                                    </div>
+                                    <div class="input-field"></div>
+                                    <div class="input-field"></div>
+                                    <div class="login-btn">LOGIN</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tablet-mockup">
+                            <div class="tablet-screen">
+                                <div class="tablet-content">
+                                    <div class="tablet-grid">
+                                        <div class="grid-item"></div>
+                                        <div class="grid-item"></div>
+                                        <div class="grid-item"></div>
+                                        <div class="grid-item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section class="formations" id="formations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Formations</h2>
+                <p class="section-subtitle">Développez vos compétences avec nos formations certifiantes</p>
+            </div>
+            
+            <div class="formations-grid">
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://beecrowd.com/wp-content/uploads/2024/04/2022-07-19-Melhores-cursos-de-Python.jpg" alt="Formation Programmation Python online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Programmation Python</h3>
+                        <p>Maîtrisez Python de A à Z : syntaxe, structures de données, programmation orientée objet et projets pratiques.</p>
+                        <div class="formation-features">
+                            <span class="feature">Python 3.x</span>
+                            <span class="feature">POO & Modules</span>
+                            <span class="feature">Projets Pratiques</span>
+                        </div>
+                        <div class="formation-price">350€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://www.cadinterop.com/images/CADInterop/CAD/autocad.webp" alt="Formation AutoCAD Architecture online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>AutoCAD Architecture</h3>
+                        <p>Apprenez AutoCAD pour l'architecture : dessin technique, plans 2D/3D, rendus et documentation professionnelle.</p>
+                        <div class="formation-features">
+                            <span class="feature">Dessin 2D/3D</span>
+                            <span class="feature">Plans Architecturaux</span>
+                            <span class="feature">Rendu & Présentation</span>
+                        </div>
+                        <div class="formation-price">450€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-da-aplica%C3%A7%C3%A3o-de-microsoft-exel-no-close-up-tela-do-iphone-apple-app-office-phon-m%C3%B3vel-112701225.jpg" alt="Formation Excel Avancé online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Excel Avancé</h3>
+                        <p>Maîtrisez Excel avancé : formules complexes, tableaux croisés dynamiques, macros VBA et automatisation.</p>
+                        <div class="formation-features">
+                            <span class="feature">Formules Avancées</span>
+                            <span class="feature">TCD & Graphiques</span>
+                            <span class="feature">Macros VBA</span>
+                        </div>
+                        <div class="formation-price">280€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://qualitytraining.be/content/uploads/2022/05/office-365-mockup-1.jpg" alt="Formation Bureautique Office online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Bureautique Office</h3>
+                        <p>Maîtrisez la suite Microsoft Office : Word, Excel, PowerPoint, Outlook pour une productivité maximale au bureau.</p>
+                        <div class="formation-features">
+                            <span class="feature">Word Avancé</span>
+                            <span class="feature">Excel & PowerPoint</span>
+                            <span class="feature">Outlook & Teams</span>
+                        </div>
+                        <div class="formation-price">320€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://ecole221.com/wp-content/uploads/2022/11/desiign-1-1024x1024.png" alt="Formation Design Graphique online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Design Graphique</h3>
+                        <p>Créez des designs professionnels avec Photoshop, Illustrator et InDesign. Maîtrisez les principes du design et la création visuelle.</p>
+                        <div class="formation-features">
+                            <span class="feature">Photoshop</span>
+                            <span class="feature">Illustrator</span>
+                            <span class="feature">InDesign</span>
+                        </div>
+                        <div class="formation-price">380€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://miro.medium.com/0*gtY-llyEbkeoS1Sp.png" alt="Formation Java online">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Programmation Java</h3>
+                        <p>Maîtrisez Java, le langage de programmation orienté objet le plus utilisé au monde. Développez des applications robustes et évolutives.</p>
+                        <div class="formation-features">
+                            <span class="feature">Java SE</span>
+                            <span class="feature">POO & Collections</span>
+                            <span class="feature">Spring Framework</span>
+                        </div>
+                        <div class="formation-price">420€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+                <div class="formation-card">
+                    <div class="formation-image">
+                        <img src="https://endpoint.educrak.com/uploads/cours/photos/21a95d7b038cfff93cc76a5c30e53819.jpg" alt="Formation Langage C online ">
+                    </div>
+                    <div class="formation-content">
+                        <h3>Langage C</h3>
+                        <p>Apprenez le langage C, fondement de la programmation système. Maîtrisez la gestion mémoire, les pointeurs et la programmation bas niveau.</p>
+                        <div class="formation-features">
+                            <span class="feature">Syntaxe C</span>
+                            <span class="feature">Pointeurs & Mémoire</span>
+                            <span class="feature">Programmation Système</span>
+                        </div>
+                        <div class="formation-price">320€</div>
+                        <button class="btn-primary">S'inscrire</button>
+                    </div>
+                </div>
+                
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Travaux -->
+    <section class="travaux" id="realisations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos Réalisations</h2>
+                <p class="section-subtitle">Découvrez nos projets web et applications mobiles</p>
+            </div>
+            
+            <div class="travaux-grid">
+                <div class="travail-card">
+                    <div class="travail-image">
+                        <img src="https://www.sportsmarketing.fr/wp-content/uploads/2014/06/adidas-house-match_header.jpg" alt="ORIGINAL PLUS E-COMMERCE">
+                    </div>
+                    <div class="travail-content">
+                        <h3>ORIGINAL PLUS E-COMMERCE</h3>
+                        <p>Plateforme e-commerce moderne.</p>
+                        
+                        <button class="btn-secondary" onclick="window.open('https://original-plus.vercel.app/', '_blank')">Consulter le site</button>
+                    </div>
+                </div>
+                
+                <div class="travail-card">
+                    <div class="travail-image">
+                        <img src="https://www.iselection.com/b2c/wp-content/uploads/sites/8/2019/11/IFI-et-investissement-immobilier.jpg" alt="App Mobile">
+                    </div>
+                    <div class="travail-content">
+                        <h3>Bib-investment</h3>
+                        <p>Bib Investment (investissement immobilier, consulting financier, startup, etc.)</p>
+                        <div class="travail-tech">
+                           
+                        </div>
+                        <button class="btn-secondary" onclick="window.open('https://bib-investment.com/', '_blank')">Consulter l'app</button>
+                    </div>
+                </div>
+                
+                <div class="travail-card">
+                    <div class="travail-image">
+                        <img src="https://img.freepik.com/photos-premium/medecins-infirmieres-portrait-equipe-dans-clinique-hospitaliere-cabinet-medical-diversite-du-travail-equipe-professionnels-sante-debout-bras-croises-confiance-collaboration-soutien_590464-92750.jpg" alt="Dashboard">
+                    </div>
+                    <div class="travail-content">
+                        <h3>CLINIQUE KENSAYA</h3>
+                        <p>Centre de diagnostic médical moderne équipé des dernières technologies pour votre bien-être et votre santé.</p>
+                        
+                        <button class="btn-secondary" onclick="window.open('https://zcy2k4xaygwcfcpag5f9w802y.bolt.host/', '_blank')">Consulter le dashboard</button>
+                    </div>
+                </div>
+                
+                <div class="travail-card">
+                    <div class="travail-image">
+                        <img src="https://www.precisionorthomd.com/wp-content/uploads/2023/10/percision-blog-header-junk-food-102323.jpg" alt="Site Corporate">
+                    </div>
+                    <div class="travail-content">
+                        <h3>Tailwind</h3>
+                        <p>Business Landing Page</p>
+                        <div class="travail-tech">
+                            <span>js</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                        <button class="btn-secondary" onclick="window.open('https://tailwind-landing-page.netlify.app/#product', '_blank')">Consulter le site</button>
+                    </div>
+                </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">À Propos de CODE NEST</h2>
+                    <p class="about-description">
+                        CODE NEST est une entreprise spécialisée dans le développement web, les applications mobiles et la formation en ligne. 
+                        Depuis notre création, nous accompagnons nos clients dans leur transformation digitale avec des solutions sur-mesure, 
+                        agiles et fiables.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projets Réalisés</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">19+</div>
+                            <div class="stat-label">Étudiants Formés</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Années d'Expérience</div>
+                        </div>
+                    </div>
+                    <div class="about-values">
+                        <div class="value">
+                            <h4>Innovation</h4>
+                            <p>Nous utilisons les dernières technologies pour créer des solutions modernes et performantes.</p>
+                        </div>
+                        <div class="value">
+                            <h4>Qualité</h4>
+                            <p>Chaque projet est développé avec rigueur et attention aux détails pour garantir la satisfaction client.</p>
+                        </div>
+                        <div class="value">
+                            <h4>Accompagnement</h4>
+                            <p>Nous formons nos clients et les accompagnons tout au long de leur projet digital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.alliancy.fr/wp-content/uploads/2022/03/equipe-informatique-protection-information-1.png" alt="Équipe CODE NEST">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos de Moi -->
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="about-me-content">
+                <div class="about-me-image">
+                    <img src="https://kinsta.com/wp-content/uploads/2022/06/nest-js-logo.png" alt="Rahmani Ahmed - Fondateur CODE NEST">
+                    <div class="about-me-badge">
+                        <span>Fondateur & CEO</span>
+                    </div>
+                </div>
+                
+                <div class="about-me-text">
+                    <div class="about-me-header">
+                        <h2 class="section-title">À Propos de Moi</h2>
+                        <h3 class="founder-name">Rahmani Ahmed</h3>
+                        <p class="founder-title">Fondateur & Directeur Général de CODE NEST</p>
+                    </div>
+                    
+                    <div class="about-me-description">
+                        <p>
+                            Passionné par l'innovation technologique depuis plus de 8 ans, j'ai créé CODE NEST avec la vision 
+                            d'accompagner les entreprises et les particuliers dans leur transformation digitale. Mon expertise 
+                            couvre le développement web, les applications mobiles, et la formation professionnelle.
+                        </p>
+                        
+                        <p>
+                            Diplômé en informatique et fort d'une expérience dans le développement de solutions complexes, 
+                            je mets mon savoir-faire au service de vos projets. Mon approche se base sur l'écoute, 
+                            la qualité et l'innovation pour vous offrir des solutions sur-mesure.
+                        </p>
+                    </div>
+                    
+                    <div class="about-me-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Années d'Expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projets Réalisés</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Clients Satisfaits</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-me-skills">
+                        <h4>Expertise Technique</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <span>Développement Web</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">📱</span>
+                                <span>Applications Mobiles</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🎓</span>
+                                <span>Formation Professionnelle</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🔧</span>
+                                <span>Consulting IT</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-me-cta">
+                        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            Travaillons Ensemble
+                        </button>
+                        <button class="btn-secondary" onclick="window.open('www.linkedin.com/in/ahmed-rahmani-392978384', '_blank')">
+                            Mon LinkedIn
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">Discutons de votre projet et trouvons ensemble la meilleure solution</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>+213 658 546 209</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>code23nest@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>Alger, Algérie</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="developpement-web">Développement Web</option>
+                            <option value="app-mobile">Application Mobile</option>
+                            <option value="formation-python">Formation Python</option>
+                            <option value="formation-autocad">Formation AutoCAD</option>
+                            <option value="formation-excel">Formation Excel Avancé</option>
+                            <option value="formation-bureautique">Formation Bureautique Office</option>
+                            <option value="formation-design">Formation Design Graphique</option>
+                            <option value="formation-java">Formation Java</option>
+                            <option value="formation-c">Formation Langage C</option>
+                            <option value="formation-algo">Formation Algorithmique</option>
+                            <option value="consulting">Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Décrivez votre projet" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 35 Q30 20 45 35 Q30 50 15 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                            <path d="M20 35 Q30 25 40 35 Q30 45 20 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                            <path d="M25 35 Q30 30 35 35 Q30 40 25 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                            <text x="30" y="38" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
+                        </svg>
+                        <span class="logo-text">CODE NEST</span>
+                    </div>
+                    <p>Développement web, apps mobiles et formations pour accélérer votre transition digitale.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Développement Web</a></li>
+                            <li><a href="#services">Applications Mobiles</a></li>
+                            <li><a href="#formations">Formations</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#about">À Propos</a></li>
+                            <li><a href="#about-me">Fondateur</a></li>
+                            <li><a href="#realisations">Réalisations</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#formations">Formations</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>+213 658 546 209</li>
+                            <li>contact@code-nest.com</li>
+                            <li>Alger, Algérie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CODE NEST. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
