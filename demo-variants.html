@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE NEST - Variantes de Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #071229;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .variant-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .variant-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .variant-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #071229;
+        }
+        
+        .color-palette {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .color-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .color-info {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .preview-button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .preview-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #2EA6FF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Retour à la maquette principale</a>
+        
+        <h1>Variantes de Design - CODE NEST</h1>
+        
+        <div class="variants-grid">
+            <!-- Variante Originale -->
+            <div class="variant-card">
+                <div class="variant-title">Variante Originale</div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #071229;" title="#071229"></div>
+                    <div class="color-swatch" style="background: #0f2b45;" title="#0f2b45"></div>
+                    <div class="color-swatch" style="background: #1f3b55;" title="#1f3b55"></div>
+                    <div class="color-swatch" style="background: #2EA6FF;" title="#2EA6FF"></div>
+                </div>
+                <div class="color-info">Bleu Nuit • Bleu Profond • Bleu Gris • Accent</div>
+                <a href="index.html" class="preview-button" style="background: #2EA6FF; color: white;">Voir la maquette</a>
+            </div>
+            
+            <!-- Variante Alternative 1 -->
+            <div class="variant-card">
+                <div class="variant-title">Variante Élégante</div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0a0a0a;" title="#0a0a0a"></div>
+                    <div class="color-swatch" style="background: #1a1a1a;" title="#1a1a1a"></div>
+                    <div class="color-swatch" style="background: #2a2a2a;" title="#2a2a2a"></div>
+                    <div class="color-swatch" style="background: #00d4aa;" title="#00d4aa"></div>
+                </div>
+                <div class="color-info">Noir • Gris Foncé • Gris Moyen • Vert Menthe</div>
+                <button class="preview-button" style="background: #00d4aa; color: white;" onclick="alert('Variante à développer')">Prévisualiser</button>
+            </div>
+            
+            <!-- Variante Alternative 2 -->
+            <div class="variant-card">
+                <div class="variant-title">Variante Moderne</div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #1a1d29;" title="#1a1d29"></div>
+                    <div class="color-swatch" style="background: #2d3748;" title="#2d3748"></div>
+                    <div class="color-swatch" style="background: #4a5568;" title="#4a5568"></div>
+                    <div class="color-swatch" style="background: #667eea;" title="#667eea"></div>
+                </div>
+                <div class="color-info">Bleu Très Foncé • Gris Bleu • Gris • Indigo</div>
+                <button class="preview-button" style="background: #667eea; color: white;" onclick="alert('Variante à développer')">Prévisualiser</button>
+            </div>
+            
+            <!-- Variante Alternative 3 -->
+            <div class="variant-card">
+                <div class="variant-title">Variante Corporate</div>
+                <div class="color-palette">
+                    <div class="color-swatch" style="background: #0f1419;" title="#0f1419"></div>
+                    <div class="color-swatch" style="background: #1e293b;" title="#1e293b"></div>
+                    <div class="color-swatch" style="background: #334155;" title="#334155"></div>
+                    <div class="color-swatch" style="background: #f59e0b;" title="#f59e0b"></div>
+                </div>
+                <div class="color-info">Bleu Très Foncé • Slate • Gris Slate • Ambre</div>
+                <button class="preview-button" style="background: #f59e0b; color: white;" onclick="alert('Variante à développer')">Prévisualiser</button>
+            </div>
+        </div>
+        
+        <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+            <h2 style="font-family: 'Poppins', sans-serif; color: #071229; margin-bottom: 20px;">Instructions de Personnalisation</h2>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 15px;">
+                Pour appliquer une variante de couleur, modifiez les variables CSS dans le fichier <code>styles.css</code> :
+            </p>
+            <pre style="background: #f8f9fa; padding: 20px; border-radius: 8px; overflow-x: auto; font-size: 14px; color: #333;">
+:root {
+    /* Modifier ces valeurs pour changer la palette */
+    --color-nuit: #071229;      /* Arrière-plan principal */
+    --color-profond: #0f2b45;   /* Éléments secondaires */
+    --color-gris: #1f3b55;      /* Éléments tertiaires */
+    --color-accent: #2EA6FF;    /* Couleur d'accent */
+    --color-white: #FFFFFF;     /* Texte et éléments clairs */
+}
+            </pre>
+            <p style="color: #666; line-height: 1.6; margin-top: 15px;">
+                Les changements s'appliqueront automatiquement à toute la maquette grâce à l'utilisation des variables CSS.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
