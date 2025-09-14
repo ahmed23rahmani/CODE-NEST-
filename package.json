@@ -1,0 +1,34 @@
+{
+  "name": "code-nest-homepage",
+  "version": "1.0.0",
+  "description": "Page d'accueil professionnelle pour CODE NEST - Développement Web, Apps Mobiles & Formations",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'Build completed - files are ready for production'",
+    "validate": "npx html-validate index.html",
+    "lighthouse": "npx lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html"
+  },
+  "keywords": [
+    "web-development",
+    "mobile-apps",
+    "training",
+    "code-nest",
+    "homepage",
+    "responsive-design"
+  ],
+  "author": "CODE NEST",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "html-validate": "^8.7.4",
+    "lighthouse": "^11.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
